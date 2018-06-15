@@ -1,0 +1,76 @@
+/* SECTION PERSONAL + FLUX */
+.section-flux {
+  width: 25vw;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  top: 60px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.3)
+}
+ 
+/* FLUX RSS */
+.flux-rss {
+  background-color: white;
+  /* height: 75vh; */
+  text-align: left;
+  padding: 25px 40px 40px 45px;
+}
+
+.loading-rss {
+  margin-top: 15%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: 'IBM Plex Mono', sans-serif;
+  letter-spacing: 1px;
+}
+
+.link-rss {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 200;
+  padding: 15px 0px 16px 0px;
+  border-bottom: 1px solid #F1F1F1;
+  line-height: 18px;
+}
+
+.link-rss a {
+  color: #342a66;
+  transition: ease-in-out 0.25s;
+}
+
+.link-rss a:hover {
+  color: blueviolet;
+  transition: ease-in-out 0.25s;
+}
+
+
+/* PERSONAL DETAILS */
+.personal {
+  background-color: yellow;
+}
+
+p.username {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 30px;
+}
+
+p.edit-admin {
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+#link-manage-users {
+  color: #292F2B;
+  transition: ease-in-out 0.2s;
+}
+
+#link-manage-users:hover {
+  color: blueviolet;
+  transition: ease-in-out 0.2s;
+}

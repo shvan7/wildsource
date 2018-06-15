@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WildSource</title>
+
+	<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed:100,200,300,400" rel="stylesheet">
+
+	<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+	<link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/modal-users.css">
+	<link rel="stylesheet" href="css/rss.css">
+
+</head>
+<body>
+
+	<div id="header-wild-source" class="header">
+		<h1>Wild Source</h1>
+		<div id="log-out-wild-source"><img src="img/log-out-icon.png"></div>
+	</div>
+
+	<div id="blocks" class="blocks-section"></div>
+
+	<div class="section-flux">
+		<div id="block-personal" class="personal">
+			<p id="session-display-name" class="username">Username</p>
+			<p id="block-link-manage-admin" class="current edit-admin"></p>
+		</div>
+
+		<div id="flux-rss" class="flux-rss">
+			<!-- FLUX RSS -->
+			<div class="loading-rss">
+				<h3>Loading RSS</h3>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal add module -->
+	<div id="new-module-form-container" class="modal">
+		<form id="new-module-form">
+
+			<fieldset id="modal-content" class="modal-content">
+				<div id="modalTitle" class="modal-title">
+					<h4>New module</h4>
+				</div>
+				<input id="new-module-form-id" name="id" type="hidden">
+				<input id="new-module-form-title" name="title" type="text" placeholder="Title of the module" minlength="3" maxlength="25" required>
+				<input id="new-module-form-url" name="url" type="url" placeholder="http://url-of-the-module.com" minlength="10" maxlength="200" required>
+
+				<div class="select">
+					<label for="new-module-form-icon">Select Icon :</label>
+					<input id="new-module-form-icon" type="hidden" name="icon" required>
+					<button id="btn-cours" class="btn-select-icon" type="button" name="cours">
+						<img class="icon-choice" src="./img/icon-cours.png">
+					</button>
+					<button id="btn-livecodings" class="btn-select-icon" type="button" name="livecodings">
+						<img class="icon-choice" src="./img/icon-livecodings.png">
+					</button>
+					<button id="btn-dojos" class="btn-select-icon" type="button" name="dojos">
+						<img class="icon-choice" src="./img/icon-dojos.png">
+					</button>
+					<button id="btn-projects" class="btn-select-icon" type="button" name="projects">
+						<img class="icon-choice" src="./img/icon-projects.png">
+					</button>
+					<button id="btn-groups" class="btn-select-icon" type="button" name="groups">
+						<img class="icon-choice" src="./img/icon-groups.png">
+					</button>
+				</div>
+
+				<div class="select">
+					<label for="new-module-form-color">Select Color :</label>
+					<input id="new-module-form-color" type="hidden" name="color" required>
+					<button name="342A66-w" class="btn-select-color" type="button">
+						<p class="chooseColor" style="background-color:#342A66"></p>
+					</button>
+					<button name="FFFFE6-b" class="btn-select-color" type="button">
+						<p class="chooseColor" style="background-color:#FFFFE6"></p>
+					</button>
+					<button name="343936-w" class="btn-select-color" type="button">
+						<p class="chooseColor" style="background-color:#343936"></p>
+					</button>
+					<button name="F3F3F3-b" class="btn-select-color" type="button">
+						<p class="chooseColor" style="background-color:#F3F3F3"></p>
+					</button>
+					<button name="FFFF57-b" class="btn-select-color" type="button">
+						<p class="chooseColor" style="background-color:#FFFF57"></p>
+					</button>
+				</div>
+
+				<div id="endForm" class="">
+					<input id="new-module-form-cancel-button" class="button-cancel" type="reset" value="Cancel">
+					<input id="new-module-form-submit-button" class="btn-submit" type="submit" value="SUBMIT" disabled>
+					<input id="new-module-form-update-button" class="btn-submit" type="hidden" value="UPDATE(1)">
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<!-- The Modal Users -->
+	<div id="new-users-form-container" class="modal">
+		<form id="new-users-form">
+
+			<fieldset id="modal-content-users" class="modal-content">
+				<p id="cancel-modal-cross"></p>
+				<div id="modalTitleUsers" class="modal-title">
+					<h4>Manage users</h4>
+				</div>
+				<div id="link-add-new-user">
+					<table id="table-add-user">
+						<thead>
+							<tr id="row-add-user">
+								<th class="button-add"><button id="btn-add-user" class="btn-add-user" type="button"></button></th>
+								<th><span class="text-add">Add a new user</span></th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<div id="block-add-user">
+					<input id="new-users-form-username" class="input-users" name="username" type="text" placeholder="Username" minlength="5" maxlength="25" required>
+					<input id="new-users-form-password" class="input-users" name="password" type="password" placeholder="Password" minlength="8" maxlength="200" required>
+	
+					<div id="custom-checkbox">
+						<label for="">
+							Admin status : <input id="new-users-form-admin" name="admin" value="false" type="hidden">
+							<div id="btn-status-admin"><p id="selector-status-admin"></p></div>
+						</label>
+					</div>
+					
+					<div id="endFormUsers" class="">
+						<input id="new-users-form-cancel-button" class="button-cancel" type="reset" value="Cancel">
+						<input id="new-users-form-submit-button" class="btn-submit" type="submit" value="NEW USER" disabled>
+					</div>
+				</div>
+				<div>
+
+				</div>
+				<div id="users-list">
+					<table class="table-users-list">
+						<tbody id="container-display-users">
+							<!-- USERS ..  -->
+						</tbody>
+					</table>
+				</div>
+
+					<table id="table-confirm-remove-user">
+						<thead id="confirm-user-delete"></thead>
+					</table>
+
+			</fieldset>
+		</form>
+	</div>
+	<!-- SCRIPT JS -->
+	<script type="module" src="./js/secure.js"></script>
+	<script type="module" src="./js/modal-display.js"></script>
+	<script type="module" src="./js/modal-users-display.js"></script>
+	<script type="module" src="./js/app.js"></script>
+</body>
+</html>

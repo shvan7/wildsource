@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background-color: #292F2B;
+}
+
+.title {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-align: center;
+  margin-top: 7vw;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+form {
+  text-align: center;
+  margin-top: 5vw;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+label .label-text {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  color: rgba(255, 255, 255, 0.25);
+  cursor: text;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  line-height: 20px;
+  -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -webkit-transform: translateY(-34px);
+  transform: translateY(-34px);
+  transition: all 0.3s;
+}
+
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  letter-spacing: 2px;
+  outline: 0;
+  padding: 10px;
+  transition: all 0.3s;
+  width: 250px;
+}
+
+label input:focus {
+  max-width: 100%;
+  width: 375px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+}
+
+label input:focus + .label-text {
+  font-size: 0.8rem;
+  -moz-transform: translateY(-75px);
+  -ms-transform: translateY(-75px);
+  -webkit-transform: translateY(-75px);
+  transform: translateY(-75px);
+}
+
+label input:valid + .label-text {
+  font-size: 0.8rem;
+  -moz-transform: translateY(-75px);
+  -ms-transform: translateY(-75px);
+  -webkit-transform: translateY(-75px);
+  transform: translateY(-75px);
+}
+
+.button {
+  background-color: transparent;
+  font-family: 'IBM Plex Mono', monospace;
+  border: 1px solid #ffffe6;
+  color: #ffffe6;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-top: 65px;
+  padding: 12px 60px;
+  transition: all 300ms;
+}
+
+.button:hover {
+  background-color: #ffffe6;
+  color: #292F2B;
+  outline: 0;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+#error-login {
+  min-height: 20px;
+  color: #ffff57;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  transition: ease-in 0.25s;
+  font-size: 0.8rem;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #292F2B inset;
+  -webkit-background-color: #292F2B !important;
+  /* transition: background-color 5000s ease-in-out 0s; */
+}
+
+::selection { 
+  background: silver; 
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "title": "Live Codings",
+    "icon": "img/icon-livecodings.png",
+    "url": "https://wildcodeschoolparis.github.io/livecodings",
+    "color": "#FFFF57",
+    "titleColor": "#292e2a",
+    "position": 4
+  },
+  {
+    "id": 1,
+    "title": "Groups",
+    "icon": "img/icon-groups-blanc.png",
+    "url": "https://wildcodeschoolparis.github.io/groups",
+    "color": "#343936",
+    "titleColor": "white",
+    "position": 5
+  },
+  {
+    "id": 2,
+    "title": "Projects",
+    "icon": "img/icon-projects.png",
+    "url": "https://wildcodeschoolparis.github.io/projects/",
+    "color": "#FFFFE6",
+    "titleColor": "#292e2a",
+    "position": 3
+  }
+]

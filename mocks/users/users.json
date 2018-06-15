@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "username": "LnaCharlotte",
+    "password": "COCO",
+    "admin": "true"
+  },
+  {
+    "id": 1,
+    "username": "COCO",
+    "password": "COCO",
+    "admin": "true"
+  },
+  {
+    "id": 2,
+    "username": "KIKI",
+    "password": "KIKI",
+    "admin": "false"
+  },
+  {
+    "id": 3,
+    "username": "Albator",
+    "password": "COCO",
+    "admin": "true"
+  },
+  {
+    "id": 4,
+    "username": "POKEMON",
+    "password": "AZERTYUUI",
+    "admin": "false"
+  },
+  {
+    "id": 5,
+    "username": "azerty",
+    "password": "44445555",
+    "admin": "false"
+  }
+]

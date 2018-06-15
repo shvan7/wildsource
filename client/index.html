@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WildSource</title>
+
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed:100,200,300,400" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/log-in.css">
+
+</head>
+<body>
+
+	<p class="title">Wild Source</p>
+	<p class="subtitle">Resources from the Wild Code School Paris</p>
+
+	<form id="log-in-form">
+
+		<label>
+    		<input id="username" name="username" type="text" required/>
+    		<div class="label-text">Username</div>
+  		</label>
+
+  		<label>
+    		<input id="password" name="password" type="password" required/>
+    		<div class="label-text">Password</div>
+  		</label>
+		  <p id="error-login"></p>
+  		<input class="button" type="submit" value="Log in">
+
+	</form>
+
+	<script type="module" src="js/log-in.js"></script>
+
+</body>
+</html>

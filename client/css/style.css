@@ -1,0 +1,270 @@
+/* GENERAL */
+::selection { 
+  background: silver; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  filter: brightness(0); 
+} */
+
+a {
+  cursor: pointer;
+}
+
+p.current {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 200;
+  padding: 25px 50px 0px 50px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #292F2B;
+  color: white;
+  z-index: 2;
+}
+
+#log-out-wild-source {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  z-index: 10;
+  width: 25px;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-align:center;
+  padding: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 2.8rem;
+}
+
+/* BLOCKS */
+.blocks-section {
+  width: 75vw;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.block {
+  width: 25vw;
+  height: 25vw;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s ease-in;
+}
+
+.block:hover {
+  filter: invert(100%);
+  transition: 0.4s ease-out;
+}
+.block-icon {
+  padding-top: 11%;
+  margin-top: 11%;
+}
+.icon {
+  width: 65px;
+}
+.block-title {
+  padding-top: 9%;
+  padding-bottom: 15%;
+  color: #292F2B;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+/* SECTION PERSONAL + FLUX */
+.section-flux {
+  width: 25vw;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  top: 60px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.3)
+}
+
+/* PERSONAL DETAILS */
+.personal {
+  background-color: yellow;
+}
+p.username {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 30px;
+}
+p.edit-admin {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* FLUX RSS */
+.flux-rss {
+  background-color: white;
+  height: 75vh;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  overflow-y: scroll;
+}
+
+.separator-flux {
+  width: 17vw;
+  border-top: solid 1px #292F2B;
+  opacity: 0.5;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+/* ADD NEW MODULE */
+#block-plus {
+  background-color: #F7F7F7;
+  cursor: pointer;
+  text-align: center;
+}
+.edit-delete {
+  color: #292F2B;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.link-edit-module, .link-delete-module, .confirm-deletion {
+  cursor: pointer;
+}
+
+.edit-button {
+  width: 50%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.delete-button {
+  width: 50%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.plus {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 100;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  line-height: 54px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+  display: inline-block;
+  margin-top: 35%;
+  color: #292F2B;
+}
+.blocks-section a {
+  text-decoration: none;
+}
+.add-new-module {
+  color: #292F2B;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: 13%;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLETS */
+@media (max-width: 900px) {
+  .block {
+    width: 33.3333vw;
+    height: 33.3333vw;
+  }
+  .section-flux {
+    width: 33.3333vw !important;
+  }
+}
+
+/* SMARTPHONES */
+@media (max-width: 650px) {
+  .blocks-section {
+    width: 100vw;
+  }
+  .block {
+    width: 100vw;
+    height: 33.3333vh;
+  }
+  .edit-delete {
+    margin: 0 !important;
+  }
+  .edit-button {
+    text-align: left;
+    padding-left: 25px;
+    margin-top: 20px;
+  }
+  .delete-button {
+    text-align: right;
+    padding-right: 25px;
+    margin-top: 20px;
+  }
+  .confirm-deletion{
+    padding-top: 20px;
+  }
+  .separator {
+    display: none;
+  }
+  .block-title {
+    padding: 2% !important;
+    margin: 0 !important;
+  }
+  .block-icon {
+    padding: 6% 2% 2% 2% !important;
+    margin: 0 !important;
+  }
+  .icon {
+    width: 60px !important;
+  }
+  .block-plus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
+  .plus {
+    align-self: center;
+    padding: 0 !important;
+    margin-top: 15% !important;
+  }
+  .add-new-module {
+    margin-top: 5% !important;
+  }
+  .section-flux {
+    display: none;
+  }
+}

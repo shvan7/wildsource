@@ -1,0 +1,21 @@
+{
+  "name": "paris-0218-wild-source",
+  "version": "1.0.0",
+  "description": "This project is a teamwork by <a href=\"https://github.com/3C2H\">Charles Chiacchia</a>, <a href=\"https://github.com/Lnac\">Héléna Domlan</a>, <a href=\"https://github.com/ConstanceHT\">Constance Henrot-Tardivier</a>, <a href=\"https://github.com/Finskou\">Leila Rhazaoui</a>, <a href=\"https://github.com/shvan7\">Aurélio Lima Ferreira</a>, <a href=\"https://github.com/MarieMalarme\">Marie Malarme</a>.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildCodeSchool/paris-0218-wild-source.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WildCodeSchool/paris-0218-wild-source/issues"
+  },
+  "homepage": "https://github.com/WildCodeSchool/paris-0218-wild-source#readme",
+  "dependencies": {
+  }
+}

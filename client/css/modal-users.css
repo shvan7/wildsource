@@ -1,0 +1,213 @@
+#modalTitleUsers {
+    margin-top: -25px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+#cancel-modal-cross {
+    right: 0;
+    cursor: pointer;
+    margin-top: -15px;
+    margin-right: -30px;
+    text-align: right;
+}
+
+#cancel-modal-cross::before {
+    content: "\2573";
+}
+
+#block-add-user {
+    display: none;
+}
+
+#table-add-user {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#link-add-new-user th {
+    border: none;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 1.25rem;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+#btn-status-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    border: 1px solid silver;
+    padding: 2px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    height: 25px;
+    width: 40px;
+}
+
+#selector-status-admin {
+    border-radius: 20px;
+    min-height: 21px;
+    max-width: 21px;
+    background-color: rgb(41, 46, 42);
+    transition: all, 0.5s;
+}
+
+.table-users-list {
+    margin-bottom: 0;
+}
+
+#users-list {
+    margin-top: 15px;
+    max-height: 170px;
+    overflow-y: scroll;
+}
+
+td, th {
+    padding: 0;
+}
+
+.delete-user, .delete-user:focus {
+    background-color: transparent;
+    color: #292F2B;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #292F2B;
+    border-radius: 200px;
+    transition: ease-in-out 0.2s;
+    line-height: 15px;
+}
+
+.delete-user:hover {
+    background-color: #292F2B;
+    color: white;
+    transition: ease-in-out 0.2s;
+    border: 1 solid #292F2B;
+}
+
+.delete-user::before {
+    content: "\2715";
+    font-size: 10px;
+    margin-left: 1px;
+}
+
+.btn-delete-user {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.confirm-remove-user {
+    color: #292F2B;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border: none;
+}
+
+#link-confirm-delete, #link-cancel-delete {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 1rem;
+    border: 1px solid #292F2B;
+    padding: 5px 30px;
+    width: 50px;
+    transition: ease-in-out 0.2s;
+    color: #292F2B;
+}
+
+#link-confirm-delete:hover, #link-cancel-delete:hover {
+    background-color: #292F2B;
+    transition: ease-in-out 0.2s;
+    color: white;
+}
+
+.no-border-bottom-th {
+    border: none;
+    text-align: right;
+}
+
+#table-confirm-remove-user {
+    padding-top: 25px;
+    margin-bottom: 0;
+}
+
+.name-user {
+    color: #292F2B;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.status-user {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 1rem;
+    padding-top: 6px;
+}
+
+.button-add {
+  width: 40px;
+}
+
+.text-add {
+    padding-left: 25px;
+}
+
+.btn-add-user {
+    background-color: #292F2B;
+    color: white;
+    padding: 0px 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    margin: 0;
+    border: none;
+    transition: ease-in-out 0.25s;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.btn-add-user::before {
+    content: "\FF0B";
+    font-size: 25px;
+    font-weight: 100;
+    transition: ease-in-out 0.1s;
+    line-height: 42px;
+    padding-left: 2px;
+}
+
+#link-add-new-user:hover .btn-add-user {
+    transition: ease-in-out 0.1s;
+    background-color: #FEFE53;
+    color: #292F2B;
+}
+
+/* CANCEL and SUBMIT */
+#endFormUsers {
+    text-align: center;
+    margin-top: 35px;
+}
+  
+#endFormUsers input {
+    width: 130px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+  
+#endFormUsers .button-cancel {
+    background-color: transparent !important;
+    border: 1px solid black !important;
+    color: black;
+    margin-right: 10px;
+}
+  
+#endFormUsers .btn-submit {
+    background-color: #292F2B;
+    margin-left: 10px;
+}
